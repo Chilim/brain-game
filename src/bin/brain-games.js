@@ -1,1 +1,5 @@
-Welcome to the brain games!
+import readlineSync from 'readline-sync';
+import index from '../index.js';
+
+
+index();
