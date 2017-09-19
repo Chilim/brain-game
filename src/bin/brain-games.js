@@ -1,1 +1,1 @@
-console.log('Hello world');
+Welcome to the brain games!
