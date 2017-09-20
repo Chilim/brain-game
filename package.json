@@ -1,7 +1,7 @@
 {
   "name": "mini-hexletgames",
   "version": "1.0.3",
-  "description": "the mini games set",
+  "description": "the hexlet mini games",
   "main": "",
   "bin": {
     "brain-games": "dist/bin/brain-games.js"
