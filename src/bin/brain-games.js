@@ -1,4 +1,4 @@
-import readlineSync from 'readline-sync';
-import index from '../index';
+#!/usr/bin/env node
+import getIndex from '..';
 
-index();
+getIndex();
