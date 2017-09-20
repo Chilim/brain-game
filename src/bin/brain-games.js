@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import getIndex from '..';
+import startGame from '..';
 
-getIndex();
+startGame();

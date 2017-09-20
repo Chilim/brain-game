@@ -1,4 +1,11 @@
+#!/usr/bin/env node
 'use strict';
 
-console.log('Welcome to the brain games!');
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9iaW4vYnJhaW4tZ2FtZXMuanMiXSwibmFtZXMiOlsiY29uc29sZSIsImxvZyJdLCJtYXBwaW5ncyI6Ijs7QUFBQUEsUUFBUUMsR0FBUixDQUFZLDZCQUFaIiwiZmlsZSI6ImJyYWluLWdhbWVzLmpzIiwic291cmNlc0NvbnRlbnQiOlsiY29uc29sZS5sb2coJ1dlbGNvbWUgdG8gdGhlIGJyYWluIGdhbWVzIScpO1xuIl19
+var _ = require('..');
+
+var _2 = _interopRequireDefault(_);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+(0, _2.default)();
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9iaW4vYnJhaW4tZ2FtZXMuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFDQTs7Ozs7O0FBRUEiLCJmaWxlIjoiYnJhaW4tZ2FtZXMuanMiLCJzb3VyY2VzQ29udGVudCI6WyJcbmltcG9ydCBzdGFydEdhbWUgZnJvbSAnLi4nO1xuXG5zdGFydEdhbWUoKTtcbiJdfQ==
