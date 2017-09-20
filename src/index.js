@@ -11,7 +11,6 @@ const getResult = (userName, getGameContent) => {
       return 'End Game';
     }
     const gameContent = getGameContent();
-    console.log(gameContent);
     const userAnswer = readlineSync.question(`Enter result: ${gameContent.question} `);
     console.log(`Your answer: ${userAnswer}`);
     if (userAnswer === gameContent.correctAnswer) {
