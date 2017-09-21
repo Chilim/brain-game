@@ -1,8 +1,7 @@
 import readlineSync from 'readline-sync';
 
 const succeed = 'Congratulations';
-const numOfCorrect = 3; // мне кажется, что снизу вверх логичнее - кол-во правильных ответов 1, 2, 3
-
+const correctAnswer = 3; // кажется, что снизу вверх логичнее - кол-во правильных ответов 1, 2, 3
 const getResult = (userName, getGameContent) => {
   const iter = (acc) => {
     if (acc === 0) {
@@ -20,7 +19,7 @@ const getResult = (userName, getGameContent) => {
     console.log(`Let's try again, ${userName}!`);
     return 'The end';
   };
-  return iter(numOfCorrect);
+  return iter(correctAnswer);
 };
 
 export default (condition, getGameContent) => {
