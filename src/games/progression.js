@@ -1,7 +1,7 @@
 import startGame from '..';
-import getRandNum from '../random-number';
+import getRandNum from '../utils';
 
-const getRandomSequence = () => {
+const buildRandomSequence = () => {
   const arr = [];
   const firstNum = getRandNum(0, 99);
   const nextStep = getRandNum(1, 9);
@@ -21,7 +21,7 @@ const getRandomSequence = () => {
 const task = 'What number is missing in this progression?';
 
 const getGameContent = () => {
-  const question = getRandomSequence();
+  const question = buildRandomSequence();
   const gapIndex = getRandNum(1, question.length - 1);
   question[gapIndex] = '...';
   const getCorrectAnswer = () => {

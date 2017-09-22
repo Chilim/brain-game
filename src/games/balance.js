@@ -1,14 +1,14 @@
 import startGame from '..';
-import getRandNum from '../random-number';
+import getRandNum from '../utils';
 
 const task = 'Balance the given number.`';
 
-const getBalanceArray = (numbers) => {
-  const newNumber = numbers.toString().split('');
-  const digitized = newNumber.map(elem => Number(elem));
+const getBalancedArray = (number) => {
+  const numberToArray = number.toString().split('');
+  const digitized = numberToArray.map(elem => Number(elem));
 
-  const iter = (acc) => {
-    const sorted = acc.sort((a, b) => a - b);
+  const iter = (arr) => {
+    const sorted = arr.sort((a, b) => a - b);
     const firstDig = sorted[0];
     const lastDig = sorted[sorted.length - 1];
     const others = sorted.slice(1, sorted.length - 1);
@@ -20,17 +20,17 @@ const getBalanceArray = (numbers) => {
   return iter(digitized);
 };
 
-const getBalanceNum = (numbers) => {
-  const newArr = getBalanceArray(numbers);
+const getBalancedNum = (number) => {
+  const newArr = getBalancedArray(number);
   let newNumber = newArr.map(element => String(element));
   newNumber = Number(newNumber.join(''));
   return newNumber;
 };
 
 const getGameContent = () => {
-  const question = getRandNum(101, 9999);
-  const correctAnswer = getBalanceNum(question);
-  return { question, correctAnswer };
+  const balanceNumber = getRandNum(101, 9999);
+  const correctAnswer = getBalancedNum(balanceNumber);
+  return { balanceNumber, correctAnswer };
 };
 
 export default () => startGame(task, getGameContent);

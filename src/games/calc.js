@@ -1,5 +1,5 @@
 import startGame from '..';
-import getRandNum from '../random-number';
+import getRandNum from '../utils';
 
 const task = 'What is the result of the expression?`';
 

@@ -1,9 +1,9 @@
 import readlineSync from 'readline-sync';
 
-const guessedTimes = 3; // кажется, что снизу вверх логичнее - кол-во правильных ответов 1, 2, 3
+const gameCount = 3;
 const getResult = (userName, getGameContent) => {
-  const iter = (acc) => {
-    if (acc === 0) {
+  const iter = (count) => {
+    if (count === 0) {
       console.log(`'Congratulations', ${userName}!`);
       return 'End Game';
     }
@@ -12,13 +12,13 @@ const getResult = (userName, getGameContent) => {
     console.log(`Your answer: ${userAnswer}`);
     if (userAnswer === gameContent.correctAnswer) {
       console.log('Correct!');
-      return iter(acc - 1);
+      return iter(count - 1);
     }
     console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${gameContent.correctAnswer}'`);
     console.log(`Let's try again, ${userName}!`);
     return 'The end';
   };
-  return iter(guessedTimes);
+  return iter(gameCount);
 };
 
 export default (condition, getGameContent) => {

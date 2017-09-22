@@ -1,5 +1,5 @@
 import startGame from '..';
-import getRandNum from '../random-number';
+import getRandNum from '../utils';
 
 const task = 'Answer "yes" if number even otherwise answer "no".';
 
