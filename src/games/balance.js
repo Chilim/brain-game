@@ -28,9 +28,9 @@ const getBalancedNum = (number) => {
 };
 
 const getGameContent = () => {
-  const balanceNumber = getRandNum(101, 9999);
-  const correctAnswer = getBalancedNum(balanceNumber);
-  return { balanceNumber, correctAnswer };
+  const question = getRandNum(101, 9999);
+  const correctAnswer = getBalancedNum(question);
+  return { question, correctAnswer };
 };
 
 export default () => startGame(task, getGameContent);
