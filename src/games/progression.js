@@ -9,8 +9,8 @@ const buildSequence = (comDiff) => {
       return arr;
     }
     const nextNumber = currentNumber * comDiff;
-    arr.push(nextNumber);
-    return iter(arr, gap - 1, nextNumber);
+    const newArr = arr.concat(nextNumber);
+    return iter(newArr, gap - 1, nextNumber);
   };
   return iter([], sequenceLength, firstNumber);
 };
@@ -18,12 +18,12 @@ const buildSequence = (comDiff) => {
 const task = 'What number is missing in this progression?';
 
 const getGameContent = () => {
-  const comDiff = getRandNum(2, 4);
-  const question = buildSequence(comDiff);
-  const gapIndex = getRandNum(1, question.length - 1);
-  question[gapIndex] = '...';
-  const getCorrectAnswer = () => question.reduce((acc, el, i) => ((el === '...') ? acc.concat(question[i - 1] * comDiff) : acc), []);
-  const correctAnswer = `${getCorrectAnswer()}`;
+  const commonDifference = getRandNum(2, 4);
+  const sequence = buildSequence(commonDifference);
+  const gapIndex = getRandNum(1, sequence.length - 1);
+  const correctAnswer = `${sequence[gapIndex]}`;
+  sequence[gapIndex] = '..';
+  const question = sequence.join(' ');
   return { question, correctAnswer };
 };
 

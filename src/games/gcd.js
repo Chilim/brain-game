@@ -8,8 +8,7 @@ const getGameContent = () => {
   const number1 = getRandNum(1, 100);
   const number2 = getRandNum(1, 100);
   const question = `${number1} ${number2}`;
-  const correct = gcd(number1, number2);
-  const correctAnswer = `${correct}`;
+  const correctAnswer = `${gcd(number1, number2)}`;
   return { question, correctAnswer };
 };
 
