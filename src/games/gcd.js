@@ -2,6 +2,7 @@ import startGame from '..';
 import getRandNum from '../utils';
 
 const task = 'Find the greatest common divisor of given numbers.';
+
 const gcd = (a, b) => (b === 0 ? a : gcd(b, a % b));
 
 const getGameContent = () => {
