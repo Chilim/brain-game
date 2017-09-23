@@ -1,6 +1,7 @@
 import readlineSync from 'readline-sync';
 
 const numberOfRounds = 3;
+
 const getResult = (userName, getGameContent) => {
   const iter = (gameCount) => {
     if (gameCount === numberOfRounds) {
