@@ -1,9 +1,10 @@
 import startGame from '..';
 import getRandNum from '../utils';
 
+const sequenceLength = 7;
+
 const buildSequence = (comDiff) => {
   const firstNumber = getRandNum(1, 5);
-  const sequenceLength = 7;
   const iter = (arr, gap, currentNumber) => {
     if (gap === 0) {
       return arr;
