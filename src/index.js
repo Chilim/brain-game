@@ -6,7 +6,7 @@ const getResult = (userName, getGameContent) => {
   const iter = (gameCount) => {
     if (gameCount === numberOfRounds) {
       console.log(`Congratulations, ${userName}!`);
-      return 'End Game';
+      return true;
     }
     const gameContent = getGameContent();
     console.log(`Question: ${gameContent.question} `);
@@ -18,7 +18,7 @@ const getResult = (userName, getGameContent) => {
     }
     console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${gameContent.correctAnswer}'`);
     console.log(`Let's try again, ${userName}!`);
-    return 'The end';
+    return false;
   };
   return iter(0);
 };
