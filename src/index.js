@@ -5,7 +5,6 @@ const numberOfRounds = 3;
 const getResult = (userName, getGameContent) => {
   const iter = (gameCount) => {
     if (gameCount === numberOfRounds) {
-      console.log(`Congratulations, ${userName}!`);
       return true;
     }
     const gameContent = getGameContent();
@@ -17,7 +16,6 @@ const getResult = (userName, getGameContent) => {
       return iter(gameCount + 1);
     }
     console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${gameContent.correctAnswer}'`);
-    console.log(`Let's try again, ${userName}!`);
     return false;
   };
   return iter(0);
@@ -28,5 +26,10 @@ export default (condition, getGameContent) => {
   console.log(`${condition}`);
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!`);
-  return getResult(userName, getGameContent);
+  const isWinner = getResult(userName, getGameContent);
+  if (isWinner) {
+    console.log(`Congratulations, ${userName}!`);
+  } else {
+    console.log(`Let's try again, ${userName}!`);
+  }
 };
