@@ -2,7 +2,7 @@ import readlineSync from 'readline-sync';
 
 const numberOfRounds = 3;
 
-const getResult = (userName, getGameContent) => {
+const getResult = (getGameContent) => {
   const iter = (gameCount) => {
     if (gameCount === numberOfRounds) {
       return true;
@@ -10,7 +10,6 @@ const getResult = (userName, getGameContent) => {
     const gameContent = getGameContent();
     console.log(`Question: ${gameContent.question} `);
     const userAnswer = readlineSync.question('Your answer: ');
-    console.log(`Your answer: ${userAnswer}`);
     if (userAnswer === gameContent.correctAnswer) {
       console.log('Correct!');
       return iter(gameCount + 1);
@@ -26,7 +25,7 @@ export default (condition, getGameContent) => {
   console.log(`${condition}`);
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!`);
-  const isWinner = getResult(userName, getGameContent);
+  const isWinner = getResult(getGameContent);
   if (isWinner) {
     console.log(`Congratulations, ${userName}!`);
   } else {
