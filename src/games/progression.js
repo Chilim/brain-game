@@ -18,7 +18,7 @@ const buildSequence = (comDiff) => {
 const task = 'What number is missing in this progression?';
 
 const getGameContent = () => {
-  const commonDifference = getRandNum(2, 4);
+  const commonDifference = getRandNum(2, 5);
   const sequence = buildSequence(commonDifference);
   const gapIndex = getRandNum(1, sequence.length - 1);
   const correctAnswer = `${sequence[gapIndex]}`;
