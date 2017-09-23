@@ -3,11 +3,11 @@ import getRandNum from '../utils';
 
 const task = 'Answer "yes" if number is prime otherwise answer "no".';
 
-const isPrime = (randNum) => {
+const isPrime = (number) => {
   const iter = (divider) => {
-    if (Math.sqrt(randNum) < divider) {
+    if (Math.sqrt(number) < divider) {
       return true;
-    } else if (randNum % divider === 0) {
+    } else if (number % divider === 0) {
       return false;
     }
     return iter(divider + 1);
