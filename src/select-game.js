@@ -7,12 +7,12 @@ import primeGame from './games/prime';
 import prograssionGame from './games/progression';
 
 const games = {
-  1: { name: 'balance', game: balanceGame },
-  2: { name: 'calculator', game: calcGame },
-  3: { name: 'even number', game: evenGame },
-  4: { name: 'greatest common divisor', game: gcdGame },
-  5: { name: 'prime number', game: primeGame },
-  6: { name: 'progression', game: prograssionGame },
+  1: { name: 'Find Balance', game: balanceGame },
+  2: { name: 'Calculator', game: calcGame },
+  3: { name: 'Even parity', game: evenGame },
+  4: { name: 'Greatest Common Divisor', game: gcdGame },
+  5: { name: 'Find Prime Number', game: primeGame },
+  6: { name: 'Arithmetic Progression', game: prograssionGame },
 };
 
 export default () => {
