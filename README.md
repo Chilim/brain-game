@@ -2,6 +2,22 @@
 
 <a href="https://codeclimate.com/github/Chilim/project-lvl1-s128"><img src="https://codeclimate.com/github/Chilim/project-lvl1-s128/badges/gpa.svg" /></a> <a href="https://travis-ci.org/Chilim/project-lvl1-s128"><img src="https://travis-ci.org/Chilim/project-lvl1-s128.svg?branch=master" /></a>
 
+### Setup
+```
+git clone https://github.com/Chilim/brain-game.git brain_games
+⋅⋅⋅cd brain_games
+⋅⋅⋅make install
+⋅⋅⋅make start
+
+```
+#### or
+
+```
+npm i -g chilim-braingames
+⋅⋅⋅brain-games
+
+```
+
 ### Games 
 * #### Find Balance 
 Given a positive integer find whether it is a balanced number. For a balanced number, the smallest digit differs from the largest by no more than one. Balanced numbers are `111`, `233`, `55`, `001`, `9999`, `0001`. The number `123` is not a balanced number since the smallest number is `1` and the lagest number is `3`. The largerst number is greater that the smallest number by two. When balancing the number, the *big numbers* give the surplus to *the smaller* so that the number becomes balanced in the end. In the case of number 123, the digit 3 should give *a point* to digit `1`, and in the end get the number `222`. Example:
