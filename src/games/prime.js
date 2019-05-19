@@ -21,4 +21,4 @@ const getGameContent = () => {
   return { question, correctAnswer };
 };
 
-export default () => startGame(task, getGameContent);
+export default userName => startGame(task, getGameContent(), userName);
