@@ -10,6 +10,7 @@ make install
 make start
 
 ```
+
 #### or
 
 ```
@@ -17,6 +18,7 @@ npm i -g chilim-braingames
 brain-games
 
 ```
+[![asciicast](https://asciinema.org/a/wrq5eoEqzpMcpK6Ju2ZjiAoKO.svg)](https://asciinema.org/a/wrq5eoEqzpMcpK6Ju2ZjiAoKO)
 
 ### Games 
 * #### Find Balance 
