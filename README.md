@@ -5,16 +5,16 @@
 ### Setup
 ```
 git clone https://github.com/Chilim/brain-game.git brain_games
-⋅⋅⋅cd brain_games
-⋅⋅⋅make install
-⋅⋅⋅make start
+cd brain_games
+make install
+make start
 
 ```
 #### or
 
 ```
 npm i -g chilim-braingames
-⋅⋅⋅brain-games
+brain-games
 
 ```
 
