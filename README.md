@@ -1,6 +1,7 @@
 # Brain Games
 
-<a href="https://codeclimate.com/github/Chilim/project-lvl1-s128"><img src="https://codeclimate.com/github/Chilim/project-lvl1-s128/badges/gpa.svg" /></a> <a href="https://travis-ci.org/Chilim/project-lvl1-s128"><img src="https://travis-ci.org/Chilim/project-lvl1-s128.svg?branch=master" /></a>
+<a href="https://codeclimate.com/github/Chilim/project-lvl1-s128"><img src="https://codeclimate.com/github/Chilim/project-lvl1-s128/badges/gpa.svg" /></a> 
+<a href="https://travis-ci.org/Chilim/project-lvl1-s128"><img src="https://travis-ci.org/Chilim/project-lvl1-s128.svg?branch=master" /></a>
 
 ### Setup
 ```
@@ -57,7 +58,7 @@ Question: 15
 Your answer: yes
 ```
 * #### Greatest Common Divisor
-Given two random numbers, find [https://en.wikipedia.org/wiki/Greatest_common_divisor](greatest common divisor(gcd)). Example:
+Given two random numbers, find [greatest common divisor(gcd)](https://en.wikipedia.org/wiki/Greatest_common_divisor). Example:
 
 ```
 Welcome to the Brain Games!
@@ -71,7 +72,7 @@ Correct!
 ```
 
 * #### Find Prime Number
-Given a random number, check if the number is [https://en.wikipedia.org/wiki/Prime_number](prime). Exapmle:
+Given a random number, check if the number is [prime](https://en.wikipedia.org/wiki/Prime_number). Exapmle:
 
 ```
 Welcome to Brain Games!
